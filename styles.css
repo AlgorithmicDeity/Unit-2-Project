@@ -7,13 +7,16 @@ body {
     padding: 0;
 }
 
+/* Ensure consistent background gradient across all screen sizes */
 html, body {
-    height: 100%; /* Full height for both html and body */
+    height: 100%;
     margin: 0;
     padding: 0;
     background: linear-gradient(to right, #40E0D0, #A0A0A0); /* Turquoise to silver gradient */
+    background-size: cover; /* Ensure gradient covers the entire viewport */
     background-repeat: no-repeat;
-    background-attachment: fixed; /* Fixes the background */
+    background-attachment: fixed; /* Fix the background during scrolling */
+    color: #333;
 }
 
 h1, h2 {
@@ -85,11 +88,13 @@ footer {
 
 /* Divider between sections */
 .divider {
-    width: 100vw; /* Full width of the viewport */
+    width: 100vw; /* Use viewport width to span the full width */
+    max-width: 100%; /* Ensure it doesn't exceed the container */
     height: 2px;
-    background-color: #1e90ff;
-    margin: 20px auto;
+    background-color: #1e90ff; /* Blue color for the divider */
+    margin: 20px auto; /* Add space around the divider */
     display: block;
+    box-sizing: border-box; /* Ensure padding and border are included in width */
 }
 
 /* Adjust padding for paragraphs to avoid overlap with the divider */
@@ -130,7 +135,7 @@ footer {
 @media (min-width: 768px) {
     body {
         font-family: 'Lora', serif;
-        background: linear-gradient(to right, #f0f0f0, #cccccc); /* Light gradient for larger screens */
+        background: linear-gradient(to right, #40E0D0, #A0A0A0); /* Light gradient for larger screens */
     }
 
     nav ul {
