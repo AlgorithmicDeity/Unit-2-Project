@@ -13,7 +13,7 @@ body {
 }
 
 /* Header and general content centering */
-header, .content, footer {
+header, .content, .intro, footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -24,6 +24,15 @@ header, .content, footer {
     margin: 0 auto; /* Centers the content horizontally */
     padding: 0 20px;
     box-sizing: border-box; /* Ensures padding is included in width */
+}
+
+/* Styling for the intro section */
+.intro {
+    padding: 20px;
+    font-size: 1.2rem; /* Adjust the font size for introductory text */
+    color: #555; /* Softer color for the intro text */
+    line-height: 1.6; /* Improved readability with line-height */
+    opacity: 0.9; /* Slight opacity for a polished look */
 }
 
 /* Divider styling */
@@ -122,7 +131,7 @@ footer {
         background: linear-gradient(to right, #40E0D0, #A0A0A0); /* Keep the same gradient */
     }
 
-    .content {
+    .content, .intro {
         display: flex;
         flex-direction: column; /* Column layout for content */
         justify-content: center;
