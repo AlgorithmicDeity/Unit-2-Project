@@ -1,0 +1,144 @@
+/* Base styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to right, #40E0D0, #A0A0A0); /* Turquoise to silver gradient */
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Adds shadow to headings */
+    color: #1e90ff; /* Blue text */
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 10px;
+    background-color: #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds box shadow to navigation */
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li:nth-child(2) a {
+    color: #40E0D0; /* Highlight the second link (AI Applications) */
+    font-weight: bold; /* Make it stand out */
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: bold;
+    border: 1px solid transparent;
+}
+
+nav ul li a:hover {
+    border: 1px solid #1e90ff; /* Blue border on hover */
+    background-color: #444; /* Darker background on hover */
+}
+
+.intro, .content {
+    padding: 20px;
+    text-align: center;
+    opacity: 0.95; /* Slight opacity */
+}
+
+figure {
+    margin: 20px auto;
+    max-width: 100%;
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+    opacity: 0.9; /* Slight opacity for images */
+}
+
+figure figcaption {
+    font-style: italic;
+    color: #555; /* Grey text for captions */
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    box-shadow: 0 -3px 5px rgba(0, 0, 0, 0.2); /* Footer shadow */
+}
+
+/* Divider between sections */
+.divider {
+    width: 100%; /* Make the divider span the entire width */
+    height: 2px;
+    background-color: #1e90ff; /* Blue color for the divider */
+    margin: 20px auto; /* Center the divider and add spacing */
+    display: block; /* Ensures it behaves like a block element */
+}
+
+/* Adjust padding for paragraphs to avoid overlap with the divider */
+.content p {
+    padding-bottom: 20px; /* Add some padding below paragraphs to make space for the divider */
+}
+
+/* Two-column layout for bullet points */
+.bullet-points {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    gap: 20px; /* Spacing between columns */
+    list-style-position: inside;
+    margin-top: 20px; /* Adds some space between the divider and the bullet points */
+    padding-left: 0; /* Ensures the list starts at the edge */
+    justify-content: center; /* Centers the bullet points */
+}
+
+/* Adjust bullet points for smaller screens (single column) */
+@media (max-width: 768px) {
+    .bullet-points {
+        grid-template-columns: 1fr; /* Single column for mobile screens */
+    }
+}
+
+/* CSS Grid for the content section */
+.content {
+    display: block;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.content figure {
+    grid-column: span 2; /* Figures span two columns */
+}
+
+/* Media Queries for Desktop */
+@media (min-width: 768px) {
+    body {
+        font-family: 'Lora', serif;
+        background: linear-gradient(to right, #f0f0f0, #cccccc); /* Light gradient for larger screens */
+    }
+
+    nav ul {
+        justify-content: flex-start;
+    }
+
+    nav ul li {
+        margin: 0 30px;
+    }
+
+    .intro, .content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Two-column layout */
+        gap: 20px; /* Adds spacing between columns */
+    }
+
+    figure {
+        grid-column: span 2; /* Figure elements span two columns */
+    }
+}
