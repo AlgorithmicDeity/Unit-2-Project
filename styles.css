@@ -88,10 +88,10 @@ footer {
 
 /* Divider between sections */
 .divider {
-    width: calc(100% - 40px); /* Make the divider span the width minus padding */
+    width: 100%; /* Spans the full width of the parent content section */
     height: 2px;
     background-color: #1e90ff; /* Blue color for the divider */
-    margin: 20px auto;
+    margin: 20px 0; /* Adds space above and below the divider */
     display: block;
 }
 
@@ -120,9 +120,11 @@ footer {
 
 /* CSS Grid for the content section */
 .content {
-    display: block;
-    max-width: 1200px;
-    margin: 0 auto;
+    width: 100%; /* Ensures the section spans the full width of the container */
+    max-width: 1200px; /* Optional, controls max width for better readability */
+    margin: 0 auto; /* Centers the content on the page */
+    padding: 0 20px; /* Provides padding for better spacing on smaller screens */
+    box-sizing: border-box; /* Ensures padding is included in width calculations */
 }
 
 .content figure {
