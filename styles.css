@@ -88,13 +88,11 @@ footer {
 
 /* Divider between sections */
 .divider {
-    width: 100vw; /* Use viewport width to span the full width */
-    max-width: 100%; /* Ensure it doesn't exceed the container */
+    width: 100%; /* Make the divider span the entire width */
     height: 2px;
     background-color: #1e90ff; /* Blue color for the divider */
-    margin: 20px auto; /* Add space around the divider */
-    display: block;
-    box-sizing: border-box; /* Ensure padding and border are included in width */
+    margin: 20px auto; /* Center the divider and add spacing */
+    display: block; /* Ensures it behaves like a block element */
 }
 
 /* Adjust padding for paragraphs to avoid overlap with the divider */
