@@ -7,18 +7,6 @@ body {
     padding: 0;
 }
 
-/* Ensure consistent background gradient across all screen sizes */
-html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    background: linear-gradient(to right, #40E0D0, #A0A0A0); /* Turquoise to silver gradient */
-    background-size: cover; /* Ensure gradient covers the entire viewport */
-    background-repeat: no-repeat;
-    background-attachment: fixed; /* Fix the background during scrolling */
-    color: #333;
-}
-
 h1, h2 {
     text-align: center;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Adds shadow to headings */
