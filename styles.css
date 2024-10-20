@@ -2,7 +2,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     background: linear-gradient(to right, #40E0D0, #A0A0A0); /* Turquoise to silver gradient */
-    color: #333;
+    color: #555;
     margin: 0;
     padding: 0;
     display: flex;
@@ -29,9 +29,9 @@ header, .content, .intro, footer {
 /* Styling for the intro section */
 .intro {
     padding: 20px;
-    font-size: 1.2rem; /* Adjust the font size for introductory text */
-    color: #555; /* Softer color for the intro text */
-    line-height: 1.6; /* Improved readability with line-height */
+    font-size: 1.2rem; 
+    color: #555; 
+    line-height: 1.6;
     opacity: 0.9; /* Slight opacity for a polished look */
 }
 
