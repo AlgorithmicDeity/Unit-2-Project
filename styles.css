@@ -152,6 +152,10 @@ footer {
         gap: 20px; /* Adds spacing between columns */
     }
 
+    .divider {
+        grid-column: 1 / -1; /* Span across all grid columns */
+    }
+
     figure {
         grid-column: span 2; /* Figure elements span two columns */
     }
